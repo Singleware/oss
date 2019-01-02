@@ -47,10 +47,11 @@ let Stylesheet = Stylesheet_1 = class Stylesheet extends Class.Null {
     }
     /**
      * Returns a new style for the specified selector path.
-     * @param selector Selector path.
+     * @param selectors Selectors path.
      * @returns Returns the style object.
      */
-    select(selector) {
+    select(...selectors) {
+        const selector = selectors.join(',');
         if (!this.selectorMap.has(selector)) {
             this.selectorMap.set(selector, new style_1.Style());
         }

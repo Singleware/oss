@@ -576,6 +576,10 @@ export declare class Style extends Class.Null {
      */
     perspective?: Types.Perspective | Types.Default | string;
     /**
+     * Sets how an element is positioned in a document.
+     */
+    position?: Types.Position | Types.Default;
+    /**
      * Sets or returns the type of quotation marks for embedded quotations.
      */
     quotes?: Types.Quotes | Types.Default | string;

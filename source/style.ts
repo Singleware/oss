@@ -1001,6 +1001,13 @@ export class Style extends Class.Null {
   public perspective?: Types.Perspective | Types.Default | string;
 
   /**
+   * Sets how an element is positioned in a document.
+   */
+  @Class.Public()
+  @Class.Property()
+  public position?: Types.Position | Types.Default;
+
+  /**
    * Sets or returns the type of quotation marks for embedded quotations.
    */
   @Class.Public()

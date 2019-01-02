@@ -7,11 +7,12 @@
   "name": "@singleware/oss",
   "description": "Singleware object style sheets.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "release/source/index.js",
   "types": "release/types/index.d.ts",
   "keywords": [
     "object style sheets",
+    "style sheet",
     "oss"
   ],
   "repository": {

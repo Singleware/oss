@@ -583,6 +583,10 @@ __decorate([
 __decorate([
     Class.Public(),
     Class.Property()
+], Style.prototype, "position", void 0);
+__decorate([
+    Class.Public(),
+    Class.Property()
 ], Style.prototype, "quotes", void 0);
 __decorate([
     Class.Public(),

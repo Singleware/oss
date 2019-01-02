@@ -519,6 +519,11 @@ type PageBreakInside = 'auto' | 'avoid';
 type Perspective = 'none';
 
 /**
+ * Common types for position property.
+ */
+type Position = 'static' | 'relative' | 'absolute' | 'sticky' | 'fixed';
+
+/**
  * Common types for quotes property.
  */
 type Quotes = 'none';

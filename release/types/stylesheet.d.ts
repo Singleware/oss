@@ -20,10 +20,10 @@ export declare class Stylesheet extends Class.Null {
     private static getStyleCode;
     /**
      * Returns a new style for the specified selector path.
-     * @param selector Selector path.
+     * @param selectors Selectors path.
      * @returns Returns the style object.
      */
-    select(selector: string): Style;
+    select(...selectors: string[]): Style;
     /**
      * Remove all styles from this object.
      */
