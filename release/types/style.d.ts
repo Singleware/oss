@@ -1,7 +1,3 @@
-/**
- * Copyright (C) 2018 Silas B. Domingos
- * This source code is licensed under the MIT License as described in the file LICENSE.
- */
 import * as Class from '@singleware/class';
 import * as Types from './types';
 /**
@@ -726,4 +722,8 @@ export declare class Style extends Class.Null {
      * Sets or returns the stack order of a positioned element.
      */
     zIndex?: Types.ZIndex | Types.Default | number;
+    /**
+     * Sets or returns the element size.
+     */
+    zoom?: Types.Default | number | string;
 }

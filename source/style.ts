@@ -1,5 +1,5 @@
-/**
- * Copyright (C) 2018 Silas B. Domingos
+/*
+ * Copyright (C) 2018-2019 Silas B. Domingos
  * This source code is licensed under the MIT License as described in the file LICENSE.
  */
 import * as Class from '@singleware/class';
@@ -1261,4 +1261,11 @@ export class Style extends Class.Null {
   @Class.Public()
   @Class.Property()
   public zIndex?: Types.ZIndex | Types.Default | number;
+
+  /**
+   * Sets or returns the element size.
+   */
+  @Class.Public()
+  @Class.Property()
+  public zoom?: Types.Default | number | string;
 }

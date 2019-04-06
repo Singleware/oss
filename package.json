@@ -7,7 +7,7 @@
   "name": "@singleware/oss",
   "description": "Singleware object style sheets.",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "release/source/index.js",
   "types": "release/types/index.d.ts",
   "keywords": [
@@ -26,18 +26,24 @@
     "@singleware/class": "^1.1.19"
   },
   "devDependencies": {
+    "@singleware/testing": "^1.0.0",
+    "@types/node": "^11.13.0",
     "prettier": "^1.15.3",
     "typescript": "^2.9.2"
   },
   "prettier": {
-    "printWidth": 140,
+    "printWidth": 180,
     "tabWidth": 2,
     "singleQuote": true,
     "semi": true
   },
   "scripts": {
-    "build": "npm run make && npm run update",
-    "make": "tsc",
-    "update": "cp -Rf ./source/*.d.ts ./release/types"
+    "prepublishOnly": "npm test",
+    "test": "node ./release/tests/suite.js",
+    "start": "node ./release/examples/stylesheet.js",
+    "build": "npm run make-source && npm run make-tests",
+    "make-source": "tsc -p ./source && npm run update-source",
+    "make-tests": "tsc -p ./tests",
+    "update-source": "cp -Rf ./source/*.d.ts ./release/types"
   }
 }

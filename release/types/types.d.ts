@@ -1,5 +1,5 @@
-/**
- * Copyright (C) 2018 Silas B. Domingos
+/*
+ * Copyright (C) 2018-2019 Silas B. Domingos
  * This source code is licensed under the MIT License as described in the file LICENSE.
  */
 import * as Class from '@singleware/class';
@@ -123,16 +123,7 @@ type BackgroundOrigin = 'padding-box' | 'border-box' | 'content-box';
 /**
  * Common types for background position property.
  */
-type BackgroundPosition =
-  | 'top left'
-  | 'top center'
-  | 'top right'
-  | 'center left'
-  | 'center center'
-  | 'center right'
-  | 'bottom left'
-  | 'bottom center'
-  | 'bottom right';
+type BackgroundPosition = 'top left' | 'top center' | 'top right' | 'center left' | 'center center' | 'center right' | 'bottom left' | 'bottom center' | 'bottom right';
 
 /**
  * Common types for background repeat property.
@@ -396,16 +387,7 @@ type FontSizeAdjust = 'none';
 /**
  * Common types for font stretch property.
  */
-type FontStretch =
-  | 'normal'
-  | 'ultra-condensed'
-  | 'extra-condensed'
-  | 'condensed'
-  | 'semi-condensed'
-  | 'semi-expanded'
-  | 'expanded'
-  | 'extra-expanded'
-  | 'ultra-expanded';
+type FontStretch = 'normal' | 'ultra-condensed' | 'extra-condensed' | 'condensed' | 'semi-condensed' | 'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded';
 
 /**
  * Common types for font style property.
